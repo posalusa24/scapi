@@ -7,6 +7,6 @@ module.exports = (req, res) => {
     loggedIn: date1 > date2
   }, (err) => {
     if (err) return console.error(err);
-    res.redirect('/');
+    res.send('Updated');
   });
 };

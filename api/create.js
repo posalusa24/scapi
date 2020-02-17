@@ -9,6 +9,7 @@ module.exports = (req, res) => {
     expireDate: new Date(req.query.expireDate)
   });
   user.save((err) => {
+    if (err) return console.error(err);
     res.send('Created');
   });
 };
