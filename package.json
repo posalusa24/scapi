@@ -1,0 +1,22 @@
+{
+  "name": "scapi",
+  "version": "1.0.0",
+  "description": "API for Smart Campus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PosaLusa24/scapi.git"
+  },
+  "author": "PosaLusa24",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PosaLusa24/scapi/issues"
+  },
+  "homepage": "https://github.com/PosaLusa24/scapi#readme",
+  "dependencies": {
+    "mongoose": "^5.9.1"
+  }
+}
