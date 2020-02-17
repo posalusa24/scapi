@@ -11,4 +11,4 @@ module.exports = (req, res) => {
   user.save((err) => {
     res.send('Created');
   });
-}
+};
