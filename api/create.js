@@ -10,6 +10,7 @@ module.exports = (req, res) => {
   });
   user.save((err) => {
     if (err) return console.error(err);
-    res.send('Created');
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.status(200).send('Created');
   });
 };
