@@ -7,7 +7,7 @@ module.exports = (req, res) => {
     loggedIn: date1 > date2
   }, (err) => {
     if (err) return console.error(err);
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.status(200).send('Updated');
+    res.writeHead(200, { 'Access-Control-Allow-Origin': '*' })
+    res.send('Updated');
   });
 };
