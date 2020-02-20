@@ -5,8 +5,8 @@ module.exports = (req, res) => {
     name: req.query.name,
     fatherName: req.query.fatherName,
     uitID: req.query.uitID,
-    createdDate: new Date(req.query.createdDate),
-    expireDate: new Date(req.query.expireDate)
+    createdDate: new Date(req.query.uitID),
+    expireDate: new Date(req.query.uitID)
   });
   user.save((err) => {
     if (err) return console.error(err);
