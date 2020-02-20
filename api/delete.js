@@ -8,7 +8,7 @@ module.exports = (req, res) => {
   });*/
   const query = User.find();
   if (req.query.hasOwnProperty('all')) {
-    query.deleteMany({ uitID: { $regex: '*' } }).exec((err) => {
+    query.deleteMany({ uitID: { $regex: '.' } }).exec((err) => {
       if (err) return console.error(err);
       res.setHeader('Access-Control-Allow-Origin', '*');
       res.status(200).send('Deleted');
