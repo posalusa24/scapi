@@ -8,13 +8,13 @@ module.exports = (req, res) => {
   });*/
   const query = User.find();
   if (req.query.hasOwnProperty('all')) {
-    query.deleteMany({ uitID: { $regex: '.' } }).exec((err) => {
+    query.deleteMany({}, (err) => {
       if (err) return console.error(err);
       res.setHeader('Access-Control-Allow-Origin', '*');
       res.status(200).send('Deleted');
     });
   } else {
-    query.deleteOne({ uitID: req.query.uitID }).exec((err) => {
+    query.deleteOne({ uitID: req.query.uitID }, (err) => {
       if (err) return console.error(err);
       res.setHeader('Access-Control-Allow-Origin', '*');
       res.status(200).send('Deleted');
