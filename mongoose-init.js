@@ -8,11 +8,12 @@ mongoose.connect(MONGODB_URI, {useNewUrlParser: true, useUnifiedTopology: true})
 exports.userModel = mongoose.model('User', {
   name: String,
   fatherName: String,
-  uitID: Number,
+  id: Number,
   createdDate: Date,
   expireDate: Date,
 
-  lastLogin: Date,
-  lastLogout: Date,
+  //lastLogin: Date,
+  //lastLogout: Date,
+  history: [Date],
   loggedIn: Boolean
 });
