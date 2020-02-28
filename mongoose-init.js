@@ -11,6 +11,7 @@ exports.userModel = mongoose.model('User', {
   id: Number,
   createdDate: Date,
   expireDate: Date,
+  fileToWrite: { type: Boolean, default: true },
 
   //lastLogin: Date,
   //lastLogout: Date,

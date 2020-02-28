@@ -7,6 +7,7 @@ module.exports = (req, res) => {
     id: req.query.id,
     createdDate: new Date(req.query.createdDate),
     expireDate: new Date(req.query.expireDate),
+    fileToWrite: true,
     history: [],
     loggedIn: false
   });
