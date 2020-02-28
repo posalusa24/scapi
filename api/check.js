@@ -4,6 +4,12 @@ module.exports = (req, res) => {
   User.findOne({ fileToWrite: true }, (err, user) => {
     if (err) return console.error(err);
     res.setHeader('Access-Control-Allow-Origin', '*');
-    res.status(200).send(user);
+    res.status(200).send({
+      name: user.name,
+      fatherName: user.fatherName,
+      id: user.id,
+      createdDate: user.createdDate,
+      expireDate: user.expireDate
+    });
   });
 };
