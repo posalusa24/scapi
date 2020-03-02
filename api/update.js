@@ -8,6 +8,7 @@ module.exports = (req, res) => {
     user.id = req.query.id || user.id;
     user.createdDate = req.query.createdDate || user.createdDate;
     user.expireDate = req.query.expireDate || user.expireDate;
+    user.fileToWrite = req.query.fileToWrite || user.fileToWrite;
     if (req.query.log) user.history.push(new Date(req.query.log));
     user.loggedIn = user.history.length%2;
     await user.save();
