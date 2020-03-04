@@ -1,2 +1,2 @@
 # scapi
-Smart Campus API, deployed with ZEIT Now
+Smart Campus API deployed with ZEIT Now
