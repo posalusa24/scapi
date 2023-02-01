@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/PosaLusa24/scapi#readme",
   "dependencies": {
-    "mongoose": "^5.9.1"
+    "mongoose": "^5.13.15"
   }
 }
